@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "generate": "json-server ./db/generater.json",
     "build": "vue-cli-service build"
   },
   "dependencies": {

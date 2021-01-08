@@ -1,0 +1,92 @@
+{
+    "users": [
+        {
+            "name": "老吴",
+            "phone": "13866778899",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 1
+        },
+        {
+            "name": "老唐",
+            "phone": "13866778811",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 2
+        },
+        {
+            "name": "小杨",
+            "phone": "13866778822",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 2
+        },
+        {
+            "name": "老陈",
+            "phone": "13866778833",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 3
+        },
+        {
+            "name": "芳姐",
+            "phone": "13866778844",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 4
+        },
+        {
+            "name": "小依",
+            "phone": "13866778855",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 5
+        },
+        {
+            "name": "吴亦凡",
+            "phone": "13866778866",
+            "email": "27732357@qq.com",
+            "education": "本科",
+            "graduationschool": "北京邮电大学",
+            "profession": "计算机",
+            "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
+            "id": 6
+        }
+        
+    ],
+    "companies": [
+        {
+            "id": 1,
+            "name": "阿里巴巴",
+            "description": "阿里巴巴，淘宝，支付宝等"
+        },
+        {
+            "id": 2,
+            "name": "腾讯",
+            "description": "微信，QQ等"
+        },
+        {
+            "id": 3,
+            "name": "字节跳动",
+            "description": "今日头条，抖音等"
+        }
+    ]
+}
