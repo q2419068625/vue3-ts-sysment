@@ -26,11 +26,12 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive, ref, toRefs } from "vue";
 import axios from "axios";
+import { Customer } from "@/utils/typs.ts";
 export default defineComponent({
   name: "Home",
   setup() {
     const state = reactive({
-      customers: [],
+      customers:<Customer[]> [],
     });
 
     //发起请求
