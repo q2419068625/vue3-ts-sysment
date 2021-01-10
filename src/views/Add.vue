@@ -73,9 +73,11 @@
 import { defineComponent, onMounted, reactive, ref, toRefs } from "vue";
 import axios from "axios";
 import { Customer } from "@/utils/typs.ts";
+import {useRouter} from 'vue-router'
 export default defineComponent({
   name: "Add",
   setup() {
+    const router = useRouter();
     const state = reactive({
       customer:<Customer>{
         name: "",
@@ -87,9 +89,12 @@ export default defineComponent({
         profile: "",
       },
     });
-     function addCustomer() {
-         console.log(state.customer);
-         
+    //添加用户信息方法
+      async function addCustomer() {
+        //  console.log(state.customer);
+       await axios.post("http://localhost:3000/users",state.customer)
+        // 路由跳转
+        router.push("/")
      }
     return {
         ...toRefs(state),
