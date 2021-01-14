@@ -94,7 +94,7 @@ export default defineComponent({
         //  console.log(state.customer);
        await axios.post("http://localhost:3000/users",state.customer)
         // 路由跳转
-        router.push("/")
+        router.push({path: "/", query: {alert: "用户信息添加成功"}});
      }
     return {
         ...toRefs(state),

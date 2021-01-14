@@ -64,7 +64,7 @@ export default {
         const res = await axios.delete(
         "http://localhost:3000/users/" + route.params.id
       );
-      router.push("/")
+       router.push({path: "/", query: {alert: "用户信息删除成功"}});
     }
 
     return { customer, deleteCustomer };

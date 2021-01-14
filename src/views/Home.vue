@@ -1,5 +1,6 @@
 <template>
   <div class="home container">
+    <Alert v-if="alert" :message="alert" />
     <table class="table table-striped">
       <thead>
         <tr>
@@ -29,12 +30,24 @@
 import { defineComponent, onMounted, reactive, ref, toRefs } from "vue";
 import axios from "axios";
 import { Customer } from "@/utils/typs.ts";
+import Alert from '@/components/Alert.vue';
+import { useRoute } from 'vue-router'
 export default defineComponent({
   name: "Home",
   setup() {
     const state = reactive({
       customers:<Customer[]> [],
+      alert: <String> ""
     });
+    const route = useRoute();
+
+    if(route.query.alert){
+      state.alert = String(route.query.alert);
+
+      setTimeout(()=>{
+        state.alert = ""
+      },2000)
+    }
 
     //发起请求
     onMounted(async () => {
@@ -45,6 +58,6 @@ export default defineComponent({
 
     return { ...toRefs(state) };
   },
-  components: {},
+  components: {Alert},
 });
 </script>
