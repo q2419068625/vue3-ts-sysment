@@ -8,6 +8,37 @@
         <button class="btn  btn-danger">删除</button>
       </span>
     </h1>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            {{customer.name}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            {{customer.phone}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+            {{customer.email}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-superpowers" aria-hidden="true"></i>
+            {{customer.education}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            {{customer.graduationschool}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-meetup" aria-hidden="true"></i>
+            {{customer.profession}}
+        </li>
+        <li class="list-group-item">
+            <i class="fa fa-wpexplorer" aria-hidden="true"></i>
+            {{customer.profile}}
+        </li>
+    </ul>
   </div>
 </template>
 
@@ -19,7 +50,7 @@ import { Customer } from "@/utils/typs.ts";
 export default {
   setup() {
     const route = useRoute();
-    const customer = ref<Customer>();
+    const customer = ref<Object>({});
     onMounted(async () => {
       const res = await axios.get(
         "http://localhost:3000/users/" + route.params.id
