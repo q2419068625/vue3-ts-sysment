@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "name": "老吴",
+      "name": "老吴123444",
       "phone": "13866778899",
       "email": "27732357@qq.com",
       "education": "本科",
@@ -79,26 +79,6 @@
       "profession": "计算机",
       "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
       "id": 7
-    },
-    {
-      "name": "1111",
-      "phone": "1",
-      "email": "1@QQ.com",
-      "education": "123",
-      "graduationschool": "123",
-      "profession": "456",
-      "profile": "123",
-      "id": 8
-    },
-    {
-      "name": "12",
-      "phone": "12",
-      "email": "45@qq.com",
-      "education": "12345",
-      "graduationschool": "123456",
-      "profession": "123456",
-      "profile": "1245",
-      "id": 9
     }
   ],
   "companies": [

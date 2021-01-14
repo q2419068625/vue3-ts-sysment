@@ -5,7 +5,7 @@
       <span style="float: right">
         <router-link class="btn btn-primary" to="/edit/1">编辑</router-link>
         &nbsp;
-        <button class="btn  btn-danger">删除</button>
+        <button class="btn  btn-danger" @click="deleteCustomer">删除</button>
       </span>
     </h1>
 
@@ -44,12 +44,13 @@
 
 <script lang="ts">
 import { onMounted, ref } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import axios from "axios";
 import { Customer } from "@/utils/typs.ts";
 export default {
   setup() {
     const route = useRoute();
+    const router = useRouter();
     const customer = ref<Object>({});
     onMounted(async () => {
       const res = await axios.get(
@@ -58,8 +59,15 @@ export default {
       console.log(res.data);
       customer.value = res.data;
     });
+    //删除
+    async function deleteCustomer() {
+        const res = await axios.delete(
+        "http://localhost:3000/users/" + route.params.id
+      );
+      router.push("/")
+    }
 
-    return { customer };
+    return { customer, deleteCustomer };
   },
 };
 </script>
