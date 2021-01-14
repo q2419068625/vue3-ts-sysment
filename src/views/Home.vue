@@ -16,7 +16,9 @@
           <td>{{ item.name }}</td>
           <td>{{ item.phone }}</td>
           <td>{{ item.email }}</td>
-          <td></td>
+          <td>
+             <router-link class="btn btn-warning" :to="'/details/' + item.id">详情</router-link>
+          </td>
         </tr>
       </tbody>
     </table>
