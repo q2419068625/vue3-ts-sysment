@@ -79,6 +79,16 @@
       "profession": "计算机",
       "profile": "北邮计算机专业,在校期间成绩优异,并获取过校园编程大赛奖项",
       "id": 7
+    },
+    {
+      "name": "33",
+      "phone": "33",
+      "email": "33@QQ.COM",
+      "education": "33",
+      "graduationschool": "33",
+      "profession": "33",
+      "profile": "333",
+      "id": 8
     }
   ],
   "companies": [
